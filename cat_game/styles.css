@@ -1,0 +1,175 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(src/start_bg.png);
+    background-repeat: unset;
+    background-size: 30%; 
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+.game-body {
+    background: radial-gradient(73.32% 60.79% at 49.11% 52.41%, #0D6078 0%, #043341 86.21%);
+}
+
+h1 {
+    text-align: center;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 120%;
+    margin: 0 0 10px;
+    }
+
+h2 {
+    text-align: center;
+    line-height: 130%;
+}
+
+p {
+    text-align: center;
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+#Playfield {
+    width: 100%;
+    max-width: 1080px;
+    min-height: 690px;
+    background: #11333E;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(src/Background.png);
+    border-radius: 10px;
+    width: 150px;
+    height: 210px;
+    margin: 10px;
+    position: relative;
+}
+
+.card img {
+    height: 210px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.closed img {
+    visibility: hidden;
+}
+
+.card:hover {
+   top:-5px;
+}
+
+.card.active {
+    border: 2px solid white;
+    margin: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+#start-game {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: auto;
+    position: fixed;
+    top: 0; 
+}
+
+#final-game {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+}
+
+.congrats, .start-block {
+    background-color: #E84E53;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    min-width: 500px;
+    min-height: 300px;
+}
+
+.start-block h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.start-block p {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.start-block select {
+    margin-bottom: 26px;
+    margin-top: 26px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+select:focus {
+    outline: 0.15em solid #0D6078;
+    box-shadow: 0 0 0.2em #0D6078;
+}
+
+.button {
+    background-color: #0D6078;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.button:hover {
+    color: #0D6078;
+    background-color: #ffffff;
+    cursor: pointer;
+}

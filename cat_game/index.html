@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Найди пару</title>
+</head>
+<body>
+    <div class="row" id="start-game">
+        <div class="start-block">
+            <h2>Давай найдем котанов!</h2><p>Выбери количество карточек на поле и начнем!</p>
+            <select id="cardCount"> 
+                <option value="value1">4</option>
+                <option value="value2">6</option>
+                <option value="value3">8</option>
+                <option value="value4">10</option>
+                <option value="value5">12</option>
+                <option value="value6">14</option>
+                <option value="value7">16</option>
+            </select>
+            <div class="button">Начать игру</div>
+        </div>
+    </div>
+    <div class="container game-content hidden">
+        <h1>Найди кота</h1>
+        <p class="subtitle">Проверь свою память — найди все пары!</p>
+        <div id="Playfield">
+            <div class="row" id="cardField"></div>
+        </div>
+    </div>
+    <div class="row hidden" id="final-game">
+        <div class="congrats">
+            <h2>Поздравляем! <br> Вы нашли всех котов!</h2>
+            <div class="button">Сыграть еще раз</div>
+        </div>
+    </div>
+</body>
+</html>
