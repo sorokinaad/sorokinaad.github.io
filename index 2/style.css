@@ -265,10 +265,6 @@ body {
     font-size: 28px;  /* Уменьшаем размер подзаголовка */
   }
 
-  .projects {
-    padding: 0 1rem 2rem;
-  }
-
   .project-card {
     flex: 1 1 calc(50% - 1rem);  /* Карточки занимают 50% ширины экрана */
     max-width: calc(50% - 1rem);
@@ -292,6 +288,19 @@ body {
 
 /* Адаптивность для мобильных устройств (до 480px) */
 @media (max-width: 990px) {
+
+  .header {
+    padding: 2rem 1rem;
+  }
+
+  .tabs {
+    padding: 1rem;
+  }
+
+  .projects {
+    padding: 0 1rem 2rem;
+  }
+
   .card-content {
     padding: 1.5rem 1.5rem 2rem;
   }
@@ -343,7 +352,10 @@ body {
   .header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem;
+  }
+
+  .header-right {
+    align-self: flex-start;
   }
 
   .header h1 {
@@ -352,6 +364,15 @@ body {
 
   .header p {
     font-size: 24px;
+  }
+
+  .header a {
+    font-size: 16px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   .tab-button {
