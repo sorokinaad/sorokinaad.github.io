@@ -61,16 +61,17 @@ const projects = [
   function createChips(types) {
     const chipsDiv = document.createElement('div');
     chipsDiv.classList.add('chips');
-    
+  
     types.forEach(type => {
       const chip = document.createElement('span');
-      chip.classList.add('chip');
-      chip.textContent = type.charAt(0).toUpperCase() + type.slice(1); // Начальная заглавная буква
+      chip.classList.add('chip', type); // добавляем .design или .code
+      chip.textContent = type === 'design' ? 'Дизайн' : 'Вёрстка'; // корректные подписи
       chipsDiv.appendChild(chip);
     });
   
     return chipsDiv;
   }
+  
   
   // Функция для отрисовки проектов
   function renderProjects() {
