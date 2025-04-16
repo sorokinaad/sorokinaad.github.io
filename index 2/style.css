@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #212427;
+  transition: background 0.3s;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #212427;
+}
+
+.header p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #212427;
+}
+
+.header a {
+  color: #212427;
+  text-decoration: none;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s;
+  color: #212427;
+}
+
+.tab-button.active {
+  background: #0077cc;
+  color: white;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Выравнивание по началу */
+  gap: 2rem;
+  padding: 2rem;
+  transition: opacity 0.4s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.project-card {
+  flex: 1 1 calc(33.33% - 1.5rem);
+  max-width: calc(33.33% - 1.5rem);
+  border-radius: 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 0;
+  padding: 1rem 48px;
+  font-size: 32px;
+  font-weight: 800; /* Используем более жирное начертание */
+  color: #212427;
+}
+
+.project-card h3 a {
+  text-decoration: none;
+  color: #212427;
+  transition: color 0.3s;
+}
+
+.project-card h3 a:hover {
+  color: #005fa3;
+}

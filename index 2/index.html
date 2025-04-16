@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexandra Sorokina — UX/UI designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Alexandra Sorokina</h1>
+    <p>UX/UI designer</p>
+    <a href="mailto:alexandra_sorokina@bk.ru">alexandra_sorokina@bk.ru</a>
+  </header>
+
+  <main>
+    <div class="tabs">
+      <button class="tab-button active" data-tab="all">Все проекты</button>
+      <button class="tab-button" data-tab="design">Дизайн</button>
+      <button class="tab-button" data-tab="code">Вёрстка</button>
+    </div>
+
+    <section class="projects" id="all">
+      <!-- Проекты будут вставлены здесь через JS -->
+    </section>
+    <section class="projects hidden" id="design"></section>
+    <section class="projects hidden" id="code"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
