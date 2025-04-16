@@ -9,6 +9,26 @@ body {
   transition: background 0.3s;
 }
 
+.cat_game {
+  background-color: #6353c5;
+  color: #ffffff;
+  padding: 32px 20px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(79 , 69, 141, 0.35);
+ transition: transform 0.3s;
+}
+
+.cat_game:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(79 , 69, 141, 0.45);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -313,6 +333,10 @@ a:hover .cursor-circle {
     padding: 2rem 1rem;
   }
 
+  .header h1 {
+    width: min-content;
+  }
+
   .tabs {
     padding: 1rem;
   }
@@ -366,7 +390,7 @@ a:hover .cursor-circle {
   }
 }
 
-/* Адаптивность для мобильных устройств (до 480px) */
+
 @media (max-width: 490px) {
 
   .header {
@@ -379,7 +403,7 @@ a:hover .cursor-circle {
   }
 
   .header h1 {
-    font-size: 40px;  /* Еще меньше размер заголовка */
+    font-size: 40px;  
   }
 
   .header p {
@@ -396,11 +420,11 @@ a:hover .cursor-circle {
   }
 
   .tab-button {
-    font-size: 14px;  /* Уменьшаем размер шрифта на очень маленьких экранах */
+    font-size: 14px;  
   }
 
   .project-card img {
-    height: 200px;  /* Уменьшаем размер изображений на маленьких экранах */
+    height: 200px;  
   }
 
   .project-arrow {
@@ -416,5 +440,16 @@ a:hover .cursor-circle {
   .project-arrow svg {
     width: 12px;
     height: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .cat_game {
+    font-size: 14px;
+    padding: 24px 12px;
+  }
+
+  .header h1 {
+    font-size: 32px;
   }
 }

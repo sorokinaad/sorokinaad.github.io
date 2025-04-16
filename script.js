@@ -1,34 +1,3 @@
-/* // Создаем кружок
-const cursorCircle = document.createElement('div');
-cursorCircle.classList.add('cursor-circle');
-document.body.appendChild(cursorCircle);
-
-// Функция для отслеживания движения курсора
-function moveCursor(event) {
-  const x = event.clientX;
-  const y = event.clientY;
-  cursorCircle.style.left = `${x}px`;
-  cursorCircle.style.top = `${y}px`;
-}
-
-// Добавляем обработчик события для движения мыши
-document.addEventListener('mousemove', moveCursor);
-
-// Добавляем обработчик для изменения размера кружка при наведении на ссылки
-document.querySelectorAll('a').forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    cursorCircle.style.width = '40px';
-    cursorCircle.style.height = '40px';
-  });
-
-  link.addEventListener('mouseleave', () => {
-    cursorCircle.style.width = '30px';
-    cursorCircle.style.height = '30px';
-  });
-}); */
-
-
-
 const projects = [
     {
       title: 'ТРК «Гранд Каньон»',
@@ -111,8 +80,8 @@ const projects = [
     projects.forEach(project => {
       const card = document.createElement('a');
       card.className = 'project-card';
-      card.href = project.url;  // Устанавливаем ссылку на проект
-      card.target = "_blank";    // Открывать в новом окне
+      card.href = project.url;  
+      card.target = "_blank";    
   
       card.innerHTML = `
         <img src="${project.image}" alt="${project.title}">
