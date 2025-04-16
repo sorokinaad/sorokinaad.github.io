@@ -250,6 +250,26 @@ body {
 }
 
 
+/* Стиль для кружка */
+.cursor-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #6353c5;
+  border-radius: 50%;
+  pointer-events: none; /* Чтобы курсор не блокировал элементы */
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s; /* Плавный переход */
+  z-index: 9999; /* Делаем кружок всегда на переднем плане */
+}
+
+/* Стиль для увеличенного кружка при наведении на ссылку */
+a:hover .cursor-circle {
+  width: 40px;
+  height: 40px;
+}
 
 
 
