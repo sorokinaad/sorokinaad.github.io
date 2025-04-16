@@ -173,3 +173,10 @@ select:focus {
     background-color: #ffffff;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .congrats, .start-block {
+        min-width: auto;
+        margin: 15px;
+    }
+}
