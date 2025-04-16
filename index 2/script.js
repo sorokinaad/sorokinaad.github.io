@@ -78,13 +78,15 @@ const projects = [
     });
   
     projects.forEach(project => {
-      const card = document.createElement('div');
+      const card = document.createElement('a');
       card.className = 'project-card';
+      card.href = project.url;  // Устанавливаем ссылку на проект
+      card.target = "_blank";    // Открывать в новом окне
   
       card.innerHTML = `
         <img src="${project.image}" alt="${project.title}">
         <div class="card-content">
-          <h3><a href="${project.url}" target="_blank">${project.title}</a></h3>
+          <h3>${project.title}</h3>
           <div class="card-bottom">
             <div class="chips-wrapper">
               ${project.type.map(type =>

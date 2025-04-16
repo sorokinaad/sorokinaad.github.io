@@ -119,14 +119,17 @@ body {
   flex: 1 1 calc(33.33% - 1.5rem);
   max-width: calc(33.33% - 1.5rem);
   border-radius: 32px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(79 , 69, 141, 0.09);
   overflow: hidden;
   background: #fff;
   transition: transform 0.3s;
+  text-decoration: none;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(79 , 69, 141, 0.15);
 }
 
 .project-card img {
