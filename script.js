@@ -2,49 +2,49 @@ const projects = [
     {
       title: 'ТРК «Гранд Каньон»',
       url: 'https://trk-canyon.ru/',
-      image: 'assets/images/project1.jpg',
+      image: 'images/project1.jpg',
       type: ['design']
     },
     {
       title: 'Фитнес-клуб «Лидер спорт»',
       url: 'https://lider-sport.ru/',
-      image: 'assets/images/project2.jpg',
+      image: 'images/project2.jpg',
       type: ['design']
     },
     {
       title: 'АНО «Алашара»',
       url: 'https://alashara.org/',
-      image: 'assets/images/project3.jpg',
+      image: 'images/project3.jpg',
       type: ['design', 'code']
     },
     {
       title: 'МЦ «Гранд Каньон»',
       url: 'https://mebel-canyon.ru/',
-      image: 'assets/images/project4.jpg',
+      image: 'images/project4.jpg',
       type: ['design']
     },
     {
       title: 'Автомойка «Гранд Каньон»',
       url: 'https://grandcanyon-auto.ru/',
-      image: 'assets/images/project5.jpg',
+      image: 'images/project5.jpg',
       type: ['design', 'code']
     },
     {
       title: 'Лэндинг Черная пятница',
       url: 'http://offer.grandcanyon.ru/',
-      image: 'assets/images/project6.jpg',
+      image: 'images/project6.jpg',
       type: ['design', 'code']
     },
     {
       title: 'Визитка отеля «Гранд Каньон»',
       url: 'https://connect.grandcanyon-hotel.ru/',
-      image: 'assets/images/project7.jpg',
+      image: 'images/project7.jpg',
       type: ['design', 'code']
     },
     {
       title: 'Складской комплекс «МОРО»',
       url: 'https://moro.spb.ru/',
-      image: 'assets/images/project8.jpg',
+      image: 'images/project8.jpg',
       type: ['design']
     }
   ];
